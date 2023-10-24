@@ -46,7 +46,7 @@ if ("restart" not in st.session_state) or st.session_state.restart == True:
 
     st.session_state.messages.save_to_file(st.session_state.unique_id)
 
-    st.experimental_rerun()
+    st.rerun()
 
 elif st.session_state.restart == False:
     unique_id = "data/conversations/" + selected_id + ".json"
@@ -82,4 +82,4 @@ if prompt is not None:
 
     st.session_state.last_message = prompt
 
-    st.experimental_rerun()
+    st.rerun()

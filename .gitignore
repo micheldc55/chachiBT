@@ -10,6 +10,7 @@ __pycache__/
 *.csv
 *.json
 *.pdf
+*.pem
 data/conversations/
 
 # Distribution / packaging
