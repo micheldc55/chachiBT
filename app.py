@@ -22,7 +22,7 @@ st.header("ChatGPT")
 
 col1, col2, col3 = st.columns([2, 2, 4])
 
-model = col1.selectbox(label="Select your model:", options=["gpt-4", "gpt-3.5-turbo-0613"])
+model = col1.selectbox(label="Select your model:", options=["gpt-4", "gpt-3.5-turbo-0613", "gpt-4-32k", "gpt-3.5-turbo-16k"])
 temperature = col2.slider("Temperature:", min_value=0.0, max_value=2.0, value=0.2)
 
 conversation_ids = load_conversation_ids()
